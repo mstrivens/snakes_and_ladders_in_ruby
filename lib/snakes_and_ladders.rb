@@ -4,6 +4,8 @@ class SnakesAndLadders
   end
 
   def move
-    4
+    moves = []
+    moves.push(dice, dice)
+    moves.inject(:+)
   end
 end

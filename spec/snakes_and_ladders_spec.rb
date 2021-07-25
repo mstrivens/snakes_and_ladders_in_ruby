@@ -18,5 +18,10 @@ describe SnakesAndLadders do
       allow(subject).to receive(:dice).and_return(2)
       expect(subject.move).to eq(4)
     end
+
+    it 'allows players to roll 2 dice which returns score' do
+      allow(subject).to receive(:dice).and_return(4)
+      expect(subject.move).to eq(8)
+    end
   end
 end
