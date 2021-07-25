@@ -29,5 +29,12 @@ describe SnakesAndLadders do
     it 'starts with a player 1 position array starting at 0' do
       expect(subject.position).to eq(0)
     end
+
+    it 'adds multiple moves to the player position' do
+      allow(subject).to receive(:dice).and_return(2)
+      subject.move
+      subject.move
+      expect(subject.position).to eq(8)
+    end
   end
 end
