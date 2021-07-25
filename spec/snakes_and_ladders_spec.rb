@@ -25,9 +25,9 @@ describe SnakesAndLadders do
     end
   end
 
-  describe '#game' do
+  describe '#position' do
     it 'starts with a player 1 position array starting at 0' do
-      expect(subject.game).to eq([0])
+      expect(subject.position).to eq(0)
     end
   end
 end
